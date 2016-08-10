@@ -9,8 +9,7 @@ public class BuildShopUITest extends BaseTest{
     @Test
     public void testTotalAmountAndTax() {
         searchAndAddtoCartProduct(PRODUCT_PROPERTY_SUEDE + " " + PRODUCT_ONE, 1);
-        searchAndAddtoCartProduct(PRODUCT_PROPERTY_CASHMERE + " " + PRODUCT_ONE, 1);
-        searchAndAddtoCartProduct(PRODUCT_TWO, 2);
+        searchAndAddtoCartProduct(PRODUCT_PROPERTY_CASHMERE + " " + PRODUCT_ONE, 2);
         cartPage.open();
         cartPage.startCheckout();
         cartPage.fillShippingAndPaymentInformation();
